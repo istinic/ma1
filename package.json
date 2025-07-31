@@ -7,11 +7,19 @@
     "start": "webpack serve --open",
     "build": "webpack",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
-    "lint:js": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:js": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:css": "stylelint \"src/**/*.css\" \"src/**/*.scss\"",
-    "lint": "npm run lint:js && npm run lint:css"
-  },
-
+    "lint": "npm run lint:js && npm run lint:css",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "fix:js": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
+    "fix:css": "stylelint \"src/**/*.css\" \"src/**/*.scss\" --fix",
+    "fix": "npm run fix:js && npm run fix:css",
+    "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "npm run lint:js",
+    "*.{css,scss}": "npm run lint:css"
+  }
+},
   "keywords": [],
   "author": "",
   "license": "ISC",

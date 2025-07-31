@@ -1,13 +1,13 @@
 body {
   margin: 0;
-  font-family: sans-serif !important;
+  font-family: sans-serif;
 }
 
 .container {
   padding: 20px;
-  background-color: #f0f0g0;
+  background-color: #f0f0f0;
 }
 
 .parent {
-  color: red;
+  color: ff0000;
 }

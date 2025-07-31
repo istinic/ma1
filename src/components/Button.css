@@ -1,6 +1,6 @@
 .button {
-  background-color: #000000; /* or any valid color value */
-  color: #ffffff; /* corrected from "white" */
+  background-color: #000; /* or any valid color value */
+  color: #fff; /* corrected from "white" */
   padding: 10px;
   border-radius: 5px;
 }
