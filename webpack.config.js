@@ -1,12 +1,24 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+import path from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-module.exports = {
+// A helper function to get the current directory name
+const __dirname = path.resolve();
+
+export default {
   mode: 'development',
   entry: './src/main.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/',
+  },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
+    compress: true,
+    port: 3000,
+    historyApiFallback: true,
   },
   module: {
     rules: [
@@ -29,13 +41,4 @@ module.exports = {
       template: './public/index.html',
     }),
   ],
-  devServer: {
-    static: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 3000,
-    host: '0.0.0.0',
-  },
-  watchOptions: {
-    ignored: ['/node_modules/**', '/data/**', '/data/data/**', '**/.git/**', '/**'],
-  },
 };

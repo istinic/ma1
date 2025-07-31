@@ -1,3 +1,10 @@
+# Dependency directories
 node_modules/
+
+# Logs and build artifacts
+npm-debug.log
 dist/
-.webpack/
+.vscode/
+
+# OS-generated files
+.DS_Store
