@@ -15,11 +15,17 @@
     "fix:js": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
     "fix:css": "stylelint \"src/**/*.css\" \"src/**/*.scss\" --fix",
     "fix": "npm run fix:js && npm run fix:css",
-    "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "npm run lint:js",
-    "*.{css,scss}": "npm run lint:css"
-  }
-},
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "src/**/*.{css,scss}": [
+      "stylelint --fix"
+    ]
+  },
+
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -42,6 +48,7 @@
     "@typescript-eslint/parser": "^8.38.0",
     "css-loader": "^7.1.2",
     "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "globals": "^16.3.0",
