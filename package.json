@@ -15,16 +15,10 @@
     "fix:js": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
     "fix:css": "stylelint \"src/**/*.css\" \"src/**/*.scss\" --fix",
     "fix": "npm run fix:js && npm run fix:css",
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": [
-      "prettier --write",
-      "eslint --fix"
-    ],
-    "src/**/*.{css,scss}": [
-      "stylelint --fix"
-    ]
-  },
-
+    "lint-staged": {
+      "src/**/*.{js,jsx,ts,tsx}": ["prettier --write", "eslint --fix"],
+      "src/**/*.{css,scss}": ["stylelint --fix"]
+    }
   },
   "keywords": [],
   "author": "",
