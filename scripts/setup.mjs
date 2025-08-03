@@ -6,7 +6,7 @@ import choices from '../configs/setup-options.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const rootDir = path.resolve(__dirname);
+const rootDir = path.resolve(__dirname, '..');
 const rootPackageJsonPath = path.join(rootDir, 'package.json');
 
 (async () => {
