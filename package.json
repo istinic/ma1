@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "setup": "node ./setup.mjs"
+    "setup": "node ./scripts/setup.mjs"
   },
   "devDependencies": {
     "prompts": "^2.4.2",
