@@ -1,7 +1,0 @@
-{
-  "extends": "stylelint-config-standard-scss",
-  "rules": {
-    "declaration-no-important": true,
-    "color-named": "never"
-  }
-}

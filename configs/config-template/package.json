@@ -1,0 +1,34 @@
+{
+  "name": "ma1-template",
+  "version": "1.0.0",
+  "description": "A minimal, functional Webpack setup.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --open",
+    "build": "webpack",
+    "test": "echo 'No tests configured yet.'",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
+    "fix": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.100.2",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2",
+    "ts-loader": "^9.5.2",
+    "typescript": "~5.8.3",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.32.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0"
+  }
+}
