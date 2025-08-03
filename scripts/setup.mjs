@@ -2,7 +2,7 @@ import { fileURLToPath } from 'url';
 import prompts from 'prompts';
 import fs from 'fs-extra';
 import path from 'path';
-import choices from '../configs/setup-options.mjs';
+import choices from './configs/setup-options.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
