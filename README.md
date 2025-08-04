@@ -4,9 +4,9 @@ This repository is a flexible boilerplate for creating React and TypeScript web 
 
 ## Configurations Available
 
-- **`desktop`**: A lightweight, modern setup using **Vite**. See `configs/desktop/README.md` for details.
-- **`phone`**: A robust, production-ready setup using **Webpack**. See `configs/phone/README.md` for details.
-- **`SamsungA54`**: A verified, working snapshot of the **Webpack** configuration for a specific device. See `configs/SamsungA54/README.md` for details.
+- **`desktop`**: A lightweight, modern setup using **Vite**. See `scripts/configs/desktop/README.md` for details.
+- **`phone`**: A robust, production-ready setup using **Webpack**. See `scripts/configs/phone/README.md` for details.
+- **`SamsungA54`**: A verified, working snapshot of the **Webpack** configuration for a specific device. See `scripts/configs/SamsungA54/README.md` for details.
 
 ## Getting Started
 
@@ -28,7 +28,7 @@ To begin, you must first set up the project by choosing a configuration.
 
 ## Post-Setup Workflow
 
-Once the setup is complete, you can find the specific commands (e.g., `npm start`, `npm run build`, `npm test`) and documentation for your chosen environment in its `README.md` file, located in the `configs/` directory.
+Once the setup is complete, you can find the specific commands (e.g., `npm start`, `npm run build`, `npm test`) and documentation for your chosen environment in its `README.md` file, located in the `scripts/configs/` directory.
 
 ## Technologies Used (Post-Setup)
 
