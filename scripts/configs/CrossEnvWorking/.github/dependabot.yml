@@ -1,0 +1,13 @@
+version: 2
+updates:
+  # Enable npm updates
+  - package-ecosystem: 'npm'
+    # Look for a package.json file in the root directory
+    directory: '/'
+    # Check for updates weekly
+    schedule:
+      interval: 'weekly'
+    # Create pull requests with a prefix
+    labels:
+      - 'dependencies'
+      - 'dependabot'
